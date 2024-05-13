@@ -3,9 +3,9 @@
 books_in = []
 books_out = []
 
-
 def event():
-    to_do = int(input("Would you like to take out, return or donate a book? Press 1 to take out, 2 to return, 3 to donate and, 4 to leave the library."))
+    print("Would you like to take out, return or donate a book?")
+    to_do = int(input("Press 1 to take out, 2 to return, 3 to donate and, 4 to leave the library."))
 
     # code for if the want to take out a book
     if to_do == 1:
@@ -81,12 +81,11 @@ def event():
 
     # code for when they want to leave the library
     elif to_do == 4:
-        x + 1
+        x = 43
         print("Thanks for stopping in at the Jimmy Foundation Public Library.")
 
     else:
         print("You didn't answer with our system you need to say 1, 2, 3, or 4. Please try again.")
-
 
 print("Welcome to the Jimmy Foundation Public Library.")
 
@@ -102,14 +101,4 @@ if "Night" in books_in and books_out:
 x = 42
 while x == 42:
     event()
-
-
-
-
-
-
-
-
-
-
 
